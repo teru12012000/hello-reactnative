@@ -62,7 +62,7 @@ export default function HomeScreen() {
                 </ThemedText>
             </ThemedView>
 
-            <Link href="/page1">Go To Page 1</Link>
+            <Link href="/(tabs)">Go To Page 1</Link>
         </ParallaxScrollView>
     )
 }
