@@ -6,8 +6,6 @@ import { useGetAllCharacters } from "@/hooks"
 export const Home = () => {
     const { data, isLoading } = useGetAllCharacters()
 
-    console.log(data)
-
     if (isLoading)
         return (
             <View style={styles.container}>
