@@ -27,13 +27,6 @@ export const CharacterDetail = (props: props) => {
         }
     }, [data])
 
-    if (isLoading)
-        return (
-            <View>
-                <Text style={{ color: "white" }}>Loading Now....</Text>
-            </View>
-        )
-
     return (
         <>
             <Stack.Screen
@@ -43,18 +36,25 @@ export const CharacterDetail = (props: props) => {
                     headerTintColor: "#fff",
                     headerTitleStyle: {
                         fontWeight: "bold"
-                    }
+                    },
+                    headerBackTitle: "Home"
                 }}
             />
-            <View style={styles.container}>
-                <Image source={{ uri: data?.image }} style={styles.image} />
-                <FlatList
-                    data={viewData}
-                    renderItem={(item) => (
-                        <Text style={{ color: "white" }}>{item.item}</Text>
-                    )}
-                />
-            </View>
+            {isLoading ? (
+                <View>
+                    <Text style={styles.loadingText}>Loading Now....</Text>
+                </View>
+            ) : (
+                <View style={styles.container}>
+                    <Image source={{ uri: data?.image }} style={styles.image} />
+                    <FlatList
+                        data={viewData}
+                        renderItem={(item) => (
+                            <Text style={styles.listText}>{item.item}</Text>
+                        )}
+                    />
+                </View>
+            )}
         </>
     )
 }

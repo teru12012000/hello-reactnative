@@ -7,6 +7,10 @@ const styles = StyleSheet.create({
         alignItems: "center",
         marginTop: 100
     },
+    titleImage: {
+        width: 261,
+        height: 130
+    },
     scrollBox: {
         width: 105 * 1.5
     },
@@ -28,6 +32,9 @@ const styles = StyleSheet.create({
     },
     buttonFont: {
         color: "black"
+    },
+    bottomStyle: {
+        height: 100
     }
 })
 

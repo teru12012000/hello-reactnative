@@ -7,6 +7,7 @@ const styles = StyleSheet.create({
         alignItems: "center",
         marginTop: 100
     },
+
     scrollBox: {
         width: 270
     },
@@ -36,6 +37,12 @@ const styles = StyleSheet.create({
     },
     buttonFont: {
         color: "black"
+    },
+    loadingText: {
+        color: "white"
+    },
+    listText: {
+        color: "white"
     }
 })
 
