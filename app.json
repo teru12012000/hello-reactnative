@@ -1,46 +1,43 @@
 {
-  "expo": {
-    "name": "hello-reactnative",
-    "slug": "hello-reactnative",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/images/backgroundImage.png",
-    "scheme": "myapp",
-    "userInterfaceStyle": "automatic",
-    "splash": {
-      "image": "./assets/images/backgroundImage.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
-    "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "com.shion.terunaga.helloreactnative"
-    },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      },
-      "package": "com.shion.terunaga.helloreactnative"
-    },
-    "web": {
-      "bundler": "metro",
-      "output": "static",
-      "favicon": "./assets/images/favicon.png"
-    },
-    "plugins": [
-      "expo-router"
-    ],
-    "experiments": {
-      "typedRoutes": true
-    },
-    "extra": {
-      "router": {
-        "origin": false
-      },
-      "eas": {
-        "projectId": "c44fca8d-1d52-4d5c-a253-8f2fbe0bac97"
-      }
+    "expo": {
+        "name": "hello-reactnative",
+        "slug": "hello-reactnative",
+        "version": "1.0.0",
+        "orientation": "portrait",
+        "icon": "./assets/images/backgroundImage.png",
+        "scheme": "myapp",
+        "userInterfaceStyle": "automatic",
+        "splash": {
+            "image": "./assets/images/backgroundImage.png",
+            "resizeMode": "contain",
+            "backgroundColor": "#000000"
+        },
+        "ios": {
+            "supportsTablet": true,
+            "bundleIdentifier": "com.shion.terunaga.helloreactnative"
+        },
+        "android": {
+            "adaptiveIcon": {
+                "backgroundColor": "#000000"
+            },
+            "package": "com.shion.terunaga.helloreactnative"
+        },
+        "web": {
+            "bundler": "metro",
+            "output": "static",
+            "favicon": "./assets/images/favicon.png"
+        },
+        "plugins": ["expo-router"],
+        "experiments": {
+            "typedRoutes": true
+        },
+        "extra": {
+            "router": {
+                "origin": false
+            },
+            "eas": {
+                "projectId": "c44fca8d-1d52-4d5c-a253-8f2fbe0bac97"
+            }
+        }
     }
-  }
 }
