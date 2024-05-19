@@ -1,4 +1,4 @@
-import { Link, Stack } from "expo-router"
+import { Link } from "expo-router"
 import { View, Text, Image, ScrollView, Button, Pressable } from "react-native"
 import styles from "./style.css"
 import { useGetAllCharacters } from "@/hooks"
